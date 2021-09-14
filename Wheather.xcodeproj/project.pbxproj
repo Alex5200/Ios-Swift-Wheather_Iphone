@@ -3,27 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		379425B326F08BC700050E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B226F08BC700050E0C /* AppDelegate.swift */; };
-		379425B526F08BC700050E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B426F08BC700050E0C /* SceneDelegate.swift */; };
-		379425B726F08BC700050E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B626F08BC700050E0C /* ViewController.swift */; };
-		379425BA26F08BC700050E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379425B826F08BC700050E0C /* Main.storyboard */; };
-		379425BC26F08BC800050E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379425BB26F08BC800050E0C /* Assets.xcassets */; };
-		379425BF26F08BC800050E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379425BD26F08BC800050E0C /* LaunchScreen.storyboard */; };
+		379425CE26F08C5800050E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B226F08BC700050E0C /* AppDelegate.swift */; };
+		379425CF26F08C5800050E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B426F08BC700050E0C /* SceneDelegate.swift */; };
+		379425D026F08C5800050E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B626F08BC700050E0C /* ViewController.swift */; };
+		379425D126F08C6500050E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379425C626F08BFA00050E0C /* LaunchScreen.storyboard */; };
+		379425D226F08C6500050E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379425C826F08BFA00050E0C /* Main.storyboard */; };
+		379425D326F08C6500050E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379425CC26F08C1300050E0C /* Assets.xcassets */; };
+		AA5FA36653F9E98B33E37CA4 /* Pods_Wheather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A92F91D5A7FF702CCFC5330 /* Pods_Wheather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EDEFDB32ED220D78A322464 /* Pods-Wheather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather.debug.xcconfig"; path = "Target Support Files/Pods-Wheather/Pods-Wheather.debug.xcconfig"; sourceTree = "<group>"; };
+		2A92F91D5A7FF702CCFC5330 /* Pods_Wheather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wheather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		379425AF26F08BC700050E0C /* Wheather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379425B226F08BC700050E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379425B426F08BC700050E0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		379425B626F08BC700050E0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		379425B926F08BC700050E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		379425BB26F08BC800050E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		379425BE26F08BC800050E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		379425C026F08BC800050E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379425C726F08BFA00050E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../new app/new app/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		379425C926F08BFA00050E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../new app/new app/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		379425CC26F08C1300050E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../new app/new app/Assets.xcassets"; sourceTree = "<group>"; };
+		86BF7D60A8D9F0917C75C09A /* Pods-Wheather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather.release.xcconfig"; path = "Target Support Files/Pods-Wheather/Pods-Wheather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5FA36653F9E98B33E37CA4 /* Pods_Wheather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				379425B126F08BC700050E0C /* Wheather */,
 				379425B026F08BC700050E0C /* Products */,
+				F1EEC6280CBE8804CFFFC8AC /* Pods */,
+				D17DCB64F1F7F2400A89A24B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +66,29 @@
 				379425B226F08BC700050E0C /* AppDelegate.swift */,
 				379425B426F08BC700050E0C /* SceneDelegate.swift */,
 				379425B626F08BC700050E0C /* ViewController.swift */,
-				379425B826F08BC700050E0C /* Main.storyboard */,
-				379425BB26F08BC800050E0C /* Assets.xcassets */,
-				379425BD26F08BC800050E0C /* LaunchScreen.storyboard */,
+				379425C626F08BFA00050E0C /* LaunchScreen.storyboard */,
+				379425C826F08BFA00050E0C /* Main.storyboard */,
+				379425CC26F08C1300050E0C /* Assets.xcassets */,
 				379425C026F08BC800050E0C /* Info.plist */,
 			);
 			path = Wheather;
+			sourceTree = "<group>";
+		};
+		D17DCB64F1F7F2400A89A24B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A92F91D5A7FF702CCFC5330 /* Pods_Wheather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1EEC6280CBE8804CFFFC8AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EDEFDB32ED220D78A322464 /* Pods-Wheather.debug.xcconfig */,
+				86BF7D60A8D9F0917C75C09A /* Pods-Wheather.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 379425C326F08BC800050E0C /* Build configuration list for PBXNativeTarget "Wheather" */;
 			buildPhases = (
+				F6E33A7F75B40E906937AAFB /* [CP] Check Pods Manifest.lock */,
 				379425AB26F08BC700050E0C /* Sources */,
 				379425AC26F08BC700050E0C /* Frameworks */,
 				379425AD26F08BC700050E0C /* Resources */,
+				71B45633ECB9D13BA6343A09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,42 +150,84 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379425BF26F08BC800050E0C /* LaunchScreen.storyboard in Resources */,
-				379425BC26F08BC800050E0C /* Assets.xcassets in Resources */,
-				379425BA26F08BC700050E0C /* Main.storyboard in Resources */,
+				379425D126F08C6500050E0C /* LaunchScreen.storyboard in Resources */,
+				379425D226F08C6500050E0C /* Main.storyboard in Resources */,
+				379425D326F08C6500050E0C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71B45633ECB9D13BA6343A09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wheather/Pods-Wheather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wheather/Pods-Wheather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wheather/Pods-Wheather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6E33A7F75B40E906937AAFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wheather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		379425AB26F08BC700050E0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379425B726F08BC700050E0C /* ViewController.swift in Sources */,
-				379425B326F08BC700050E0C /* AppDelegate.swift in Sources */,
-				379425B526F08BC700050E0C /* SceneDelegate.swift in Sources */,
+				379425CE26F08C5800050E0C /* AppDelegate.swift in Sources */,
+				379425CF26F08C5800050E0C /* SceneDelegate.swift in Sources */,
+				379425D026F08C5800050E0C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		379425B826F08BC700050E0C /* Main.storyboard */ = {
+		379425C626F08BFA00050E0C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				379425B926F08BC700050E0C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		379425BD26F08BC800050E0C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				379425BE26F08BC800050E0C /* Base */,
+				379425C726F08BFA00050E0C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		379425C826F08BFA00050E0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				379425C926F08BFA00050E0C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -200,6 +268,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Alexandrlyachov;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -261,6 +330,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Alexandrlyachov;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -283,6 +353,7 @@
 		};
 		379425C426F08BC800050E0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EDEFDB32ED220D78A322464 /* Pods-Wheather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +372,7 @@
 		};
 		379425C526F08BC800050E0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86BF7D60A8D9F0917C75C09A /* Pods-Wheather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
