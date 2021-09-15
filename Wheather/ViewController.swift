@@ -21,8 +21,16 @@ class ViewController: UIViewController{
     @IBOutlet weak var picker: UIPickerView!
     
 }
+//struct VewWheather {
+//    <#fields#>
+//}
+
+
 // MARK: - Wheather View
 class Wheather: UIViewController, CLLocationManagerDelegate{
+    struct defaultsKeys {
+        static var tempW: Int = 0
+    }
     @IBOutlet weak var lblWheatherSummary: UILabel!
     @IBOutlet weak var City: UILabel!
     let APIKEY = "f765a62486dd5839cfc0051699c8d603"
@@ -33,7 +41,6 @@ class Wheather: UIViewController, CLLocationManagerDelegate{
     var units = "metric"
     var unit = "C"
     var locationManager = CLLocationManager()
-
 
     func loadCurrentWeather() {
     let url = "\(BASEURL)\(WEATHER)q=\(lat)&appid=\(APIKEY)&units=\(units)"
@@ -53,7 +60,11 @@ class Wheather: UIViewController, CLLocationManagerDelegate{
               if let main = json["main"] as? [String:Any]   {
                   if let temp = main["temp"] as? NSNumber {
                       print("temp=\(temp)")
-                      self.lblWheatherSummary.text = "\(temp) \(self.unit)"
+                    defaultsKeys.tempW = Int(temp)
+                    let defaults = UserDefaults.standard
+                    defaults.set(defaultsKeys.tempW, forKey: "myFlag")
+                 
+                    self.lblWheatherSummary.text = "\(defaultsKeys.tempW) \(self.unit)"
                   }
                   if let temp_max = main["temp_max"] as? NSNumber, let temp_min = main["temp_min"] as? NSNumber {
                       print("temp_max=\(temp_max) and temp_min=\(temp_min)")
@@ -73,8 +84,17 @@ class Wheather: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var currentData: UILabel!
 
     @IBOutlet weak var StyleViewWheather: UIView!
+    func retTemp() -> Int{
+        return defaultsKeys.tempW
+        
+    }
     override func viewDidLoad() {
-        loadCurrentWeather();
+        super.viewDidLoad()
+        
+        loadCurrentWeather()
+        
+        
+      
         let today = Date()
         let d_format = DateFormatter()
         let m_format = DateFormatter()
@@ -89,6 +109,7 @@ class Wheather: UIViewController, CLLocationManagerDelegate{
         StyleViewWheather.layer.cornerRadius = 30
         
     }
+    
 }
 // MARK: - Settings View
 class Settings: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -112,6 +133,8 @@ class Settings: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
        }
     // MARK: Btn Sub Alert
     @IBAction func SubButtonAction(_ sender: Any) {
+        let a = AppDelegate()
+        a.sendNotafications()
         let alert = UIAlertController(title: " Применить Смену погоды?", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Да", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Нет", style: .cancel, handler: nil))

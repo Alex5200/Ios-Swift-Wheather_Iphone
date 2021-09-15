@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3757D2DA26F1DA450030838E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375F6F1326F0ECC5001DFBA1 /* WidgetKit.framework */; };
+		3757D2DB26F1DA450030838E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375F6F1526F0ECC5001DFBA1 /* SwiftUI.framework */; };
+		3757D2DE26F1DA450030838E /* WheatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3757D2DD26F1DA450030838E /* WheatherApp.swift */; };
+		3757D2E126F1DA460030838E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3757D2E026F1DA460030838E /* Assets.xcassets */; };
+		3757D2E326F1DA460030838E /* WheatherApp.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3757D2DF26F1DA450030838E /* WheatherApp.intentdefinition */; };
+		3757D2E726F1DA460030838E /* WheatherAppExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3757D2D926F1DA450030838E /* WheatherAppExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3757D2ED26F1E2BB0030838E /* DataWheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3757D2EC26F1E2BB0030838E /* DataWheather.swift */; };
 		379425CE26F08C5800050E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B226F08BC700050E0C /* AppDelegate.swift */; };
 		379425CF26F08C5800050E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B426F08BC700050E0C /* SceneDelegate.swift */; };
 		379425D026F08C5800050E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379425B626F08BC700050E0C /* ViewController.swift */; };
@@ -16,9 +23,43 @@
 		AA5FA36653F9E98B33E37CA4 /* Pods_Wheather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A92F91D5A7FF702CCFC5330 /* Pods_Wheather.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3757D2E526F1DA460030838E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 379425A726F08BC700050E0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3757D2D826F1DA450030838E;
+			remoteInfo = WheatherAppExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		375F6F2326F0ECC6001DFBA1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3757D2E726F1DA460030838E /* WheatherAppExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1EDEFDB32ED220D78A322464 /* Pods-Wheather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather.debug.xcconfig"; path = "Target Support Files/Pods-Wheather/Pods-Wheather.debug.xcconfig"; sourceTree = "<group>"; };
 		2A92F91D5A7FF702CCFC5330 /* Pods_Wheather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wheather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3757D2D926F1DA450030838E /* WheatherAppExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WheatherAppExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3757D2DD26F1DA450030838E /* WheatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WheatherApp.swift; path = WheatherApp/WheatherApp.swift; sourceTree = SOURCE_ROOT; };
+		3757D2DF26F1DA450030838E /* WheatherApp.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WheatherApp.intentdefinition; sourceTree = "<group>"; };
+		3757D2E026F1DA460030838E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3757D2E226F1DA460030838E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3757D2EC26F1E2BB0030838E /* DataWheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWheather.swift; sourceTree = "<group>"; };
+		375F6F1326F0ECC5001DFBA1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		375F6F1526F0ECC5001DFBA1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3769A00D26F10E6400AE29D3 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		3769A00F26F10E6400AE29D3 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		379425AF26F08BC700050E0C /* Wheather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379425B226F08BC700050E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379425B426F08BC700050E0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +72,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3757D2D626F1DA450030838E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3757D2DB26F1DA450030838E /* SwiftUI.framework in Frameworks */,
+				3757D2DA26F1DA450030838E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		379425AC26F08BC700050E0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3757D2DC26F1DA450030838E /* WheatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				3757D2DD26F1DA450030838E /* WheatherApp.swift */,
+				3757D2EC26F1E2BB0030838E /* DataWheather.swift */,
+				3757D2DF26F1DA450030838E /* WheatherApp.intentdefinition */,
+				3757D2E026F1DA460030838E /* Assets.xcassets */,
+				3757D2E226F1DA460030838E /* Info.plist */,
+			);
+			path = WheatherApp;
+			sourceTree = "<group>";
+		};
 		379425A626F08BC700050E0C = {
 			isa = PBXGroup;
 			children = (
 				379425B126F08BC700050E0C /* Wheather */,
+				3757D2DC26F1DA450030838E /* WheatherApp */,
 				379425B026F08BC700050E0C /* Products */,
 				F1EEC6280CBE8804CFFFC8AC /* Pods */,
 				D17DCB64F1F7F2400A89A24B /* Frameworks */,
@@ -56,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				379425AF26F08BC700050E0C /* Wheather.app */,
+				3757D2D926F1DA450030838E /* WheatherAppExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				2A92F91D5A7FF702CCFC5330 /* Pods_Wheather.framework */,
+				375F6F1326F0ECC5001DFBA1 /* WidgetKit.framework */,
+				375F6F1526F0ECC5001DFBA1 /* SwiftUI.framework */,
+				3769A00D26F10E6400AE29D3 /* UserNotifications.framework */,
+				3769A00F26F10E6400AE29D3 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,6 +162,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3757D2D826F1DA450030838E /* WheatherAppExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3757D2E826F1DA460030838E /* Build configuration list for PBXNativeTarget "WheatherAppExtension" */;
+			buildPhases = (
+				3757D2D526F1DA450030838E /* Sources */,
+				3757D2D626F1DA450030838E /* Frameworks */,
+				3757D2D726F1DA450030838E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WheatherAppExtension;
+			productName = WheatherAppExtension;
+			productReference = 3757D2D926F1DA450030838E /* WheatherAppExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		379425AE26F08BC700050E0C /* Wheather */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 379425C326F08BC800050E0C /* Build configuration list for PBXNativeTarget "Wheather" */;
@@ -103,10 +188,12 @@
 				379425AC26F08BC700050E0C /* Frameworks */,
 				379425AD26F08BC700050E0C /* Resources */,
 				71B45633ECB9D13BA6343A09 /* [CP] Embed Pods Frameworks */,
+				375F6F2326F0ECC6001DFBA1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3757D2E626F1DA460030838E /* PBXTargetDependency */,
 			);
 			name = Wheather;
 			productName = Wheather;
@@ -122,6 +209,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					3757D2D826F1DA450030838E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					379425AE26F08BC700050E0C = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -141,11 +231,20 @@
 			projectRoot = "";
 			targets = (
 				379425AE26F08BC700050E0C /* Wheather */,
+				3757D2D826F1DA450030838E /* WheatherAppExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3757D2D726F1DA450030838E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3757D2E126F1DA460030838E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		379425AD26F08BC700050E0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,6 +300,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3757D2D526F1DA450030838E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3757D2E326F1DA460030838E /* WheatherApp.intentdefinition in Sources */,
+				3757D2DE26F1DA450030838E /* WheatherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		379425AB26F08BC700050E0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,10 +316,19 @@
 				379425CE26F08C5800050E0C /* AppDelegate.swift in Sources */,
 				379425CF26F08C5800050E0C /* SceneDelegate.swift in Sources */,
 				379425D026F08C5800050E0C /* ViewController.swift in Sources */,
+				3757D2ED26F1E2BB0030838E /* DataWheather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3757D2E626F1DA460030838E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3757D2D826F1DA450030838E /* WheatherAppExtension */;
+			targetProxy = 3757D2E526F1DA460030838E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		379425C626F08BFA00050E0C /* LaunchScreen.storyboard */ = {
@@ -233,6 +350,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3757D2E926F1DA460030838E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheatherApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "new-project.Wheather.WheatherApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3757D2EA26F1DA460030838E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheatherApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "new-project.Wheather.WheatherApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		379425C126F08BC800050E0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1EDEFDB32ED220D78A322464 /* Pods-Wheather.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 86BF7D60A8D9F0917C75C09A /* Pods-Wheather.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +551,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3757D2E826F1DA460030838E /* Build configuration list for PBXNativeTarget "WheatherAppExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3757D2E926F1DA460030838E /* Debug */,
+				3757D2EA26F1DA460030838E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		379425AA26F08BC700050E0C /* Build configuration list for PBXProject "Wheather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
